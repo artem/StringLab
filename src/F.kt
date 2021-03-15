@@ -5,7 +5,7 @@ import java.util.*
 import kotlin.math.max
 import kotlin.math.min
  
-private fun zCompute(s: String): IntArray {
+private fun zCompute1(s: String): IntArray {
     val z = IntArray(s.length)
     var maxL = 0
     for (i in 1 until s.length) {
@@ -28,7 +28,7 @@ fun main() {
     val out = PrintWriter(System.out)
     val t = reader.readLine()
  
-    val z = zCompute(t)
+    val z = zCompute1(t)
  
     var ans = t.length
     for (i in 1 until t.length/2) {
